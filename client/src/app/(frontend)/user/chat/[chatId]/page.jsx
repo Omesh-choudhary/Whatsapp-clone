@@ -42,6 +42,17 @@ function page() {
   const dispatch = useDispatch()
  
 
+  // useEffect(()=>{
+
+  //   const GetMessages=async()=>{
+  //     const {data:messages}=await axios.get(`${HOST}/api/user/get-messages/${LoginUser.id}/${ChatUser.id}`)
+  //       const currentmessages = messages.messages
+  //        dispatch(SetMessages(currentmessages))
+
+  //   }
+
+  //   GetMessages()
+  // },[])
   
    useEffect(()=>{
    if (LoginUser) {
